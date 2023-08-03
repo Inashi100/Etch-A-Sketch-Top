@@ -1,3 +1,29 @@
 body{
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 430px;
+    justify-content: space-around;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    align-items: center;
+}
+
+.board{
+    width: 500px;
+    height: 480px;
+    display: grid;
+    border: 1px solid black;
 }
