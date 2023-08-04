@@ -2,7 +2,7 @@ let color = "black";
 let click = false;
 
 document.addEventListener("DOMContentLoaded", function(){
-   createBoard(16);
+   createBoard(32);
    document.querySelector("body").addEventListener("click", function(e){
     if(e.target.tagName != "BUTTON"){
         click = !click;
@@ -67,5 +67,5 @@ function setColor(colorChoice){
 
 function resetBoard(){
     let divs = document.querySelectorAll("divs")
-    divs.forEach((div) => div.style.backgroundcolor = white)
+    divs.forEach((div) => div.style.backgroundcolor = "white")
 }
