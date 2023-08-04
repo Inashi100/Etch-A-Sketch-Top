@@ -3,6 +3,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: aquamarine;
+}
+
+h1{
+    font-style: oblique;
 }
 
 .header{
@@ -11,6 +16,7 @@ body{
     align-items: center;
     width: 430px;
     justify-content: space-around;
+    color: brown;
 }
 
 .footer{
