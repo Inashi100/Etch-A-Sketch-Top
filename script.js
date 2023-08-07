@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
             draw.innerHTML = "You're Not allowed To Draw" 
         }
     }
+    
    })
    let btn_popup = document.querySelector("#popup");
    btn_popup.addEventListener("click", function(){
