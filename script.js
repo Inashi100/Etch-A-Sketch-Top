@@ -25,16 +25,17 @@ document.addEventListener("DOMContentLoaded", function(){
 function createBoard(size){
     let board = document.querySelector(".board");
 
-board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+    board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
-for (let i = 0; i < 256; i++) {
-    let square = document.createElement("div");
-    square.addEventListener("mouseover", colorsquare);
-    board.insertAdjacentElement("beforeend", square);
+    for (let i = 0; i < 256; i++) {
+        let square = document.createElement("div");
+        square.addEventListener("mouseover", colorsquare);
+        board.insertAdjacentElement("beforeend", square);
+    }
+
 }
 
-}
 function getsize(){
     let input = prompt("what board size?");
     let message = document.querySelector("#message");
